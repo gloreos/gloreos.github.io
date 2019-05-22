@@ -47,6 +47,14 @@ img {
   width: 100%;
 }
 
+p span {
+  font-weight: 600;
+}
+
+input {
+  grid-column: 1/8;
+}
+
 /** LAYOUT RULES **/
 .container {
   display: grid;
@@ -66,6 +74,11 @@ img {
   grid-template-columns: 1 / 8;
 }
 
+.nav__flex-wrapper {
+  display: flex;
+  justify-content: left;
+}
+
 .background {
   width: 100%;
   height: 100%;
@@ -78,6 +91,10 @@ img {
 .container--padding {
   padding-top: 40px;
   padding-bottom: 80px;
+}
+
+.container--connect {
+  padding-top: 40px;
 }
 
 /**Grid Structure**/
@@ -121,6 +138,7 @@ img {
 }
 
 /** STATE RULES **/
+
 /** Backgrounds**/
 .background--darkpurple {
   background-color: #7EA0DE;
@@ -152,6 +170,8 @@ img {
 }
 
 /** THEME RULES **/
+
+/**Navigation**/
 .nav__logo {
   position: absolute;
   top: 25px;
@@ -167,6 +187,54 @@ img {
   width: 2rem;
 }
 
+.nav__drawer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.nav__link {
+  padding: 4px 4px 4px 32px;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav__logo--github {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-top: 100px;
+  margin-left: 32px;
+}
+
+.nav__logo--linkedin {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.nav__link:hover {
+  color: #7EA0DE;
+}
+
+.nav__drawer .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/**Intro and Footer**/
 .intro__title, .intro__description {
   color: #FFFFFF;
 }
@@ -177,7 +245,46 @@ img {
   margin: 0 3px;
 }
 
-/** portfolio **/
+/**Homepage**/
+.homepage__image {
+  box-shadow: 0 2px 4px grey;
+}
+
+.card {
+  min-width: 150px;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.writing__wrapper {
+  height: 200px;
+  width: 310px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  grid-template-columns: 1 / 8;
+  justify-content: center;
+}
+
+.writing__wrapper--button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.carousel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  position: absolute;
+}
+
+/** Portfolio **/
 
 .intro__image {
     padding-top: 150px;

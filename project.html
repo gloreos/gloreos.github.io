@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600,600i,700,700i|Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
+    <script src = "script.js"></script>
+
 
 
   </head>
@@ -13,9 +15,17 @@
 
   <div class = "background background--darkpurple">
 <!--NAV-->
-    <img class = "nav__menu" src = "img/homepage/whiteMenu.png" alt = "menuIcon">
-    <img class = "nav__logo" src = "img/homepage/whiteLogo.png" alt="logo">
-
+    <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/whiteMenu.png" alt = "menuIcon"></a>
+    <a href = "index.html"><img class = "nav__logo" src = "img/homepage/whiteLogo.png" alt="logo"></a>
+    <div class = "nav__drawer" id = "sidenav">
+      <a href="javascript:void(0)" class = "closebtn" onclick="closeNav()">&times;</a>
+      <a class = "nav__link" href="index.html"><h2>Work</h2></a>
+      <a class = "nav__link" href="about.html"><h2>About</h2></a>
+      <div class = "nav__flex-wrapper">
+        <a href = "github.com"><img class = "nav__logo--github" src="img/homepage/gitHub_logo.png" alt="GitHub Logo"></a>
+        <a href = "linkedin.com"><img class = "nav__logo--linkedin" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo"></a>
+      </div>
+    </div>
 <!--INTRO-->
     <section class = "container">
       <h1 class = "intro__title">Stacks</h1>
@@ -103,7 +113,7 @@
         <h3 class = "project__h3">User Stories and Flows</h3>
         <p>I created a list of user tasks and ranked them by priority (low to high). For the scope of this project, I focused on high priority tasks, particularly optimizing collaboration tools and usability.</p>
         <p>Then, I created user flows to represent high and mid-priority tasks.</p>
-        <img class = "userFlow" src="img/stacks/onboardingFlow.png" alt="Onboarding Flow">
+        <img class = "userFlow" src="img/stacks/onboardingFlow.svg" alt="Onboarding Flow">
         </section>
       </div>
 
@@ -144,26 +154,26 @@
         <h3 class = "project__h3">Preference Testing</h3>
         <p>Throughout the design process, I had to iterate on my design. The landing page itself went through several font and stylistic changes. I was divided on which font to use for the heading, so I preference tested between the fonts, Montserrat and Moon 2.0. Once I decided to use the Montserrat font, I also made changes to the formatting to make the content more readable.</p>
         <div class = "container__half1">
-          <img src="img/stacks/preferenceTest_montserrat.png" alt="Stacks Preference Test: Montserrat">
-          <img src="img/stacks/preferenceTest_moon.png" alt="Stacks Preference Test: Moon 2.0">
+          <img src="img/stacks/preferenceTest_montserrat.svg" alt="Stacks Preference Test: Montserrat">
+          <img src="img/stacks/preferenceTest_moon.svg" alt="Stacks Preference Test: Moon 2.0">
         </div>
-        <img class = "container__half2" src="img/stacks/preferenceTest_final.png" alt="Stacks Final Landing Page">
+        <img class = "container__half2" src="img/stacks/preferenceTest_final.svg" alt="Stacks Final Landing Page">
 
         <h3 class = "project__h3">Deep Dive: Organization</h3>
         <p>I learned several insights from my rounds of user testing, but the “organization” flow was the most challenging to act on.</p>
-        <img src="img/stacks/iteration1a.png" alt="Stacks Lo-fi">
+        <img src="img/stacks/iteration1a.svg" alt="Stacks Lo-fi">
         <p>People understood the copy, “Workspace” as a folder. They were confused that clicking “Project” would open up another folder.</p>
-        <img src="img/stacks/iteration1b.png" alt="Stacks Hi-fi">
+        <img src="img/stacks/iteration1b.svg" alt="Stacks Hi-fi">
         <p>Changed “Workspace” > Dashboard and “Project” > Workspace”. The dashboard was the home page where users could get a high level overview of the different projects they were working on. A workspace was a folder that contained documents or files.</p>
 
-        <img src="img/stacks/iteration2a.png" alt="Stacks Lo-fi">
+        <img src="img/stacks/iteration2a.svg" alt="Stacks Lo-fi">
         <p>When asked to upload a photo, users were drawn to the big plus button under “Recent Projects” and completely missed the tiny ghost button, labelled “+Add”.</p>
-        <img src="img/stacks/iteration2b.png" alt="Stacks Hi-fi">
+        <img src="img/stacks/iteration2b.svg" alt="Stacks Hi-fi">
         <p>Removed the large button on the left navigation and changed the CTA to a primary button.</p>
 
-        <img src="img/stacks/iteration3a.png" alt="Stacks Lo-fi">
+        <img src="img/stacks/iteration3a.svg" alt="Stacks Lo-fi">
         <p>The copy, “Main Stacks” was supposed to be a section for important files. It was supposed to be a play on the product name, “Stacks,” but really, it was just confusing.</p>
-        <img src="img/stacks/iteration3b.png" alt="Stacks Hi-fi">
+        <img src="img/stacks/iteration3b.svg" alt="Stacks Hi-fi">
         <p>After a round of preference testing, changed “Main Stacks” to simply, “Pinned items”.</p>
       </section>
     </div>
