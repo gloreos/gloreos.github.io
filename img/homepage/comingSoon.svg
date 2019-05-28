@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="460px" height="313px" viewBox="0 0 460 313" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
     <title>comingSoon</title>
     <desc>Created with Sketch.</desc>
     <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="1440-Desktop-Home" transform="translate(-740.000000, -1209.000000)">
             <g id="comingSoon" transform="translate(740.000000, 1209.000000)">
                 <rect id="StacksRectangle" fill="#FFFFFF" x="0" y="0" width="460" height="313"></rect>
-                <text id="COMING-SOON-Copy" font-family="Montserrat-Bold, Montserrat" font-size="24" font-weight="bold" fill="#000000">
-                    <tspan x="134.728" y="165">COMING SOON</tspan>
+                <text id="COMING-SOON-Copy" font-family="Montserrat-Bold, Montserrat" font-size="32" font-weight="bold" fill="#000000">
+                    <tspan x="104.304" y="168">COMING SOON</tspan>
                 </text>
             </g>
         </g>

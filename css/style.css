@@ -15,68 +15,92 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: Montserrat;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: Source Sans Pro;
   font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-family: Montserrat;
 }
 
 p, li {
   font-size: 1.4rem;
   font-family: Source Sans Pro;
-  margin-top: .5rem;
+  padding-top: .5rem;
 }
 
-button {
-  font-size: 1.6rem;
-  font-family: Source Sans Pro;
-  font-weight: 600;
-  border-radius: 35px;
-}
-
-h1, h2, p, h3, img, ul{
+h1, h2, p, h3, h4, img, ul{
   grid-column: 1 / span 8;
 }
 
 img {
   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 p span {
   font-weight: 600;
 }
 
-input {
-  grid-column: 1/8;
+input, label {
+  grid-column: 1 / span 8;
+  width: 100%;
+  height: 25px;
+}
+
+textarea {
+  grid-column: 1 / span 8;
+  width: 100%;
+  height: 80px;
+}
+
+footer {
+  margin-top: 75px;
 }
 
 /** LAYOUT RULES **/
 .container {
+  column-gap: .9rem;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
-  column-gap: 9px;
-  padding-right: 30px;
-  padding-left: 30px;
-  margin: 0 auto;
-  max-width: 960px;
-  height: 100%;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.container--padding {
+  padding-top: 4rem;
+  padding-bottom: 12rem;
+}
+
+.container__connect--padding {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
 }
 
 .flex-wrapper {
   display: flex;
   justify-content: center;
-  grid-template-columns: 1 / 8;
 }
 
 .nav__flex-wrapper {
   display: flex;
   justify-content: left;
+}
+
+.footer__flex-wrapper {
+  display: flex;
+  justify-content: left;
+  padding-left: 8%;
 }
 
 .background {
@@ -85,16 +109,8 @@ input {
 }
 
 .intro {
-  padding-bottom: 110px;
-}
-
-.container--padding {
-  padding-top: 40px;
-  padding-bottom: 80px;
-}
-
-.container--connect {
-  padding-top: 40px;
+  padding-bottom: 13.5rem;
+  padding-top: 5rem;
 }
 
 /**Grid Structure**/
@@ -112,14 +128,22 @@ input {
   width:100%;
 }
 
-.connect__button {
-  grid-column: 1 / span 3;
+.form__container {
+  column-gap: 9px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  max-width: 960px;
+  margin-top: -80px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 /**Heading Structures**/
 .homepage__h2 {
   padding-top: 50px;
   padding-bottom: 25px;
+  text-align: center;
 }
 
 .project__h2 {
@@ -146,15 +170,27 @@ input {
 
 .background--yellow {
   background-color: #FFFAE6;
-  background-image: url("../img/homepage/oval_1024.png");
+  background-image: url("../img/homepage/oval.svg");
   background-repeat: no-repeat;
+  background-position: center right;
+
+}
+
+.background__about--yellow {
+  background-color: #FFFAE6;
+  background-image: url("../img/homepage/oval_about.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center right;
 }
 
 .background--orange {
   background-color: #FEECE0;
-  background-image: url("../img/homepage/orangeRectangle_1024.png");
+  background-image: url("../img/homepage/orangeRectangle.svg");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 100%;
+
 }
 
 .background--lightpurple {
@@ -169,20 +205,31 @@ input {
   background-color: #F0F0F0;
 }
 
+.background__project--carousel {
+  background-color: #FFFFFF;
+  background-image: url("../img/stacks/carouselBack.svg");
+  background-position: center top;
+  grid-column: 1 /9;
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+
+
+
 /** THEME RULES **/
 
 /**Navigation**/
 .nav__logo {
+  left: 3rem;
   position: absolute;
   top: 25px;
   width: 35px;
-  left: 30px;
 }
 
 .nav__menu {
   height: 15px;
-  left: 90%;
-  position: relative;
+  position: absolute;
+  right: 3rem;
   top: 32px;
   width: 2rem;
 }
@@ -200,12 +247,23 @@ input {
   transition: 0.5s;
 }
 
+.nav__button--close {
+  position: absolute;
+  top: 1rem;
+  font-size: 36px;
+  right: 3rem;
+}
+
 .nav__link {
-  padding: 4px 4px 4px 32px;
+  padding: 20px 4px 4px 32px;
   text-decoration: none;
   color: #000;
   display: block;
   transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: #7EA0DE;
 }
 
 .nav__logo--github {
@@ -222,21 +280,14 @@ input {
   margin-left: 10px;
 }
 
-.nav__link:hover {
-  color: #7EA0DE;
-}
-
-.nav__drawer .closebtn {
-  position: absolute;
-  top: 0px;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
 /**Intro and Footer**/
 .intro__title, .intro__description {
   color: #FFFFFF;
+}
+
+.project__intro--description {
+  color: #FFFFFF;
+  padding-bottom: 2rem;
 }
 
 .footer__logo {
@@ -245,49 +296,45 @@ input {
   margin: 0 3px;
 }
 
+/**Connect Form**/
+.connect__button {
+  background-color: #5D84CB;
+  border-radius: 35px;
+  color: #FFFFFF;
+  font-family: Source Sans Pro;
+  font-size: 1.6rem;
+  font-weight: 600;
+  grid-column: 1 / span 3;
+  height: 40px;
+  margin-top: 20px;
+}
+
 /**Homepage**/
 .homepage__image {
   box-shadow: 0 2px 4px grey;
 }
 
-.card {
-  min-width: 150px;
-  margin-right: 1rem;
-  display: inline-block;
+.writing__image1 {
+  width: 50%;
 }
 
-.writing__wrapper {
-  height: 200px;
-  width: 310px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  grid-template-columns: 1 / 8;
-  justify-content: center;
+.design__caption {
+  margin-top: 26%;
+  margin-left: 10px;
 }
 
-.writing__wrapper--button {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-}
-
-.carousel {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  display: flex;
-  position: absolute;
-}
 
 /** Portfolio **/
 
 .intro__image {
-    padding-top: 150px;
+    padding-top: 7rem;
+}
+
+.intro__button1, .intro__button2 {
+  font-size: 1.6rem;
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  border-radius: 35px;
 }
 
 .intro__button1 {
@@ -333,6 +380,34 @@ input {
 .research__persona {
   width: 70px !important;
   height: 70px;
+}
+
+/**CAROUSEL**/
+.carousel {
+  min-width: 200px;
+  grid-column: 1 / span 8;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -100px;
+}
+
+.carousel-control-next-icon {
+  margin-right: -100px;
+}
+
+.carousel img {
+  width: 80%;
+}
+
+/** About **/
+.about__logo{
+  width: 60px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 /** Media Queries**/

@@ -2,117 +2,92 @@
 <html>
   <head>
     <title>Gloria Choi</title>
-    <link rel="icon" href="img/homepage/prpleLogo.png">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link rel="icon" href="img/homepage/blackLogo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600,600i,700,700i|Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
-    <script src = "script.js"></script>
-    <script src="carousel.js"></script>
-
   </head>
   <body>
 
-    <div class = "background background--darkpurple"> <!--put the background into section-->
-      <!--NAV-->
-        <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/whiteMenu.png" alt = "menuIcon"></a>
-        <img class = "nav__logo" src = "img/homepage/whiteLogo.png" alt="logo">
-        <div class = "nav__drawer" id = "sidenav">
-          <a href="javascript:void(0)" class = "closebtn" onclick="closeNav()">&times;</a>
-          <a class = "nav__link" href="index.html"><h2>Work</h2></a>
-          <a class = "nav__link" href="about.html"><h2>About</h2></a>
-          <div class = "nav__flex-wrapper">
-            <a href = "github.com"><img class = "nav__logo--github" src="img/homepage/gitHub_logo.png" alt="GitHub Logo"></a>
-            <a href = "linkedin.com"><img class = "nav__logo--linkedin" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo"></a>
-          </div>
+    <section class="background background--darkpurple">
+    <!--NAV-->
+      <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/whiteMenu.png" alt = "menuIcon"></a>
+      <img class="nav__logo" src="img/homepage/whiteLogo.png" alt="logo">
+      <div class="nav__drawer" id="sidenav">
+        <a href="javascript:void(0)" class = "nav__button--close" onclick="closeNav()">&times;</a>
+        <a class = "nav__link" href="index.html"><h2>Work</h2></a>
+        <a class = "nav__link" href="about.html"><h2>About</h2></a>
+        <div class = "nav__flex-wrapper">
+          <a href = "github.com"><img class = "nav__logo--github" src="img/homepage/gitHub_logo.png" alt="GitHub Logo"></a>
+          <a href = "linkedin.com"><img class = "nav__logo--linkedin" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo"></a>
         </div>
-
-      <!--INTRO-->
-          <section class = "intro container">
-              <h1 class = "intro__title">Gloria Choi</h1>
-              <h3 class = "intro__description">A San Jose-based UX’er with a background in writing and a delight for design. <a href="about.html">Learn more</a></h3>
-          </section>
-    </div>
-
-
-    <!--DESIGN-->
-
-    <div class="background background--yellow">
-      <section class="container--padding container">
-        <h2 class = "homepage__h2">Design</h2>
-        <a href = "project.html" class = "container__half1"><img class = "homepage__image" src = "img/homepage/stacks-homepage.svg" alt = "Stacks Dashboard Desktop"></a>
-        <img class="container__half2 homepage__image" src = "img/homepage/comingSoon.svg" alt = "Coming Soon">
-
-        <p class = "container__half1"><span>Stacks</span> A mobile-responsive cloud storage application for students.</p>
-        <p class = "container__half2"><span>Coming Soon</span> Something epic is in store.</p>
-      </section>
-    </div>
+      </div>
+    <!--INTRO-->
+      <div class="intro container">
+        <h1 class = "intro__title">Gloria Choi</h1>
+        <h3 class = "intro__description">A San Jose-based UX’er with a background in writing and a delight for design. <a href="about.html">Learn more</a></h3>
+      </div>
+    </section>
 
 
-  <!--WRITING-->
-    <div class="background background--orange">
-      <section class="container--padding container">
-        <h2 class="homepage__h2">Writing</h2>
-          <div class="writing__wrapper">
-            <ul class="carousel" data-target="carousel">
-              <li class="card" data-target="card">
-                <img class = "homepage__image" src="img/homepage/kbDesktop.svg" alt="Knowledge Base Desktop">
-              </li>
-              <li class="card" data-target="card">
-                <img class = "homepage__image" src = "img/homepage/toneExamples.svg" alt="Voice and Tone">
-              <li class="card" data-target="card">
-                <img class="homepage__image" src="img/homepage/uxwritingPhone.svg" alt="Examples of UX Writing">
-              </li>
-            </ul>
-            <div class="writing__wrapper--button">
-              <button data-action="slideLeft">Left</button>
-              <button data-action="slideRight">Right</button>
-            </div>
-          </div>
-      </section>
-
-
-<!--
+    <!--WRITING-->
+    <section class="background background--yellow">
+      <div class="container--padding container">
+        <h2 class = "homepage__h2">WRITING</h2>
         <a href = "#" class = "container__half1"><img class = "homepage__image" src = "img/homepage/kbDesktop.svg" alt = "Knowledge Base Desktop"></a>
-        <img class = "container__half2 homepage__image" src = "img/homepage/toneExamples.svg" alt = "Voice and Tone">
-        <p class = "container__half1"><span>Help Center Audit</span> A content audit of ZapLabs' Help Center.</p>
-        <p class = "container__half2"><span>Voice and Tone</span> Guidelines for in-product and learning content.</p>
-        <img class = "container__half1 homepage__image" src = "img/homepage/uxwritingPhone.svg" alt = "Examples of UX Writing">
-        <p class = "container__half1"><span>And more!</span> Writing for human interfaces.</p>
-        </div>
+        <a href="#" class="container__half2"><img class = "homepage__image" src = "img/homepage/uxwritingPhone.svg" alt = "Examples of UX Writing"></a>
+        <p class="container__half1"><span>Help Center Audit,</span> ZapLabs</p>
+        <p class="container__half2"><span>Other Writings,</span> ZapLabs</p>
+      </div>
+    </section>
 
-      -->
+    <!-- Put images in container half 1 and captions in container half 2. Then give the captions some left padding.-->
 
 
-    </div>
+  <!--DESIGN-->
+    <section class="background background--orange">
+      <div class = "container--padding container">
+        <h2 class="homepage__h2">DESIGN</h2>
+        <a href="project.html" class = "container__half1"><img class = "homepage__image" src = "img/homepage/stacks-homepage.svg" alt = "Knowledge Base Desktop"></a>
+        <p class = "container__half2 design__caption"><span>Stacks</span><br>Bloc Designer Track</p>
+      </div>
+    </section>
 
     <!--LETS CONNECT-->
-    <div class = "background background--lightpurple">
-      <section class = "container container--connect">
-          <h2 class = "homepage__h2">Let's Connect</h2>
+    <section class = "background background--lightpurple">
+      <div class = "container__connect--padding container">
+          <h2 class = "homepage__h2">LET'S CONNECT</h2>
           <p>Thanks for stopping by. Want to chat? I’d love to grab a drink and talk  writing or design. Reach me on LinkedIn or send me a message.</p>
-      </section>
-          <form class = "container">
-            <label>Name</label>
-            <input class = "connect__input" type="text" name="firstLastName"><br>
-            <label>Email Address</label>
-            <input type = "text" class = "connect__input" name="emailAddress"><br>
-            <label>Message</label>
-            <input type= "text" class = "connect__input" name="message"><br>
-            <button class = "connect__button" type="submit" form="connectForm" value="Submit">Submit</button>
-          </form>
-
-    <!--FOOTER-->
-        <footer>
-          <div class = "flex-wrapper">
-            <img class = "footer__logo" src="img/homepage/gitHub_logo.png" alt="GitHub Logo">
-            <img class = "footer__logo" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo">
-          </div>
-          <div class = "flex-wrapper">
-            <p>© 2019 Gloria Choi</p>
-          </div>
-        </footer>
-
       </div>
+      <form class="form__container" action="https://formspree.io/email@domain.tld" method="POST">
+        <label><h4>Name</h4></label>
+        <input type="text" name="firstLastName"><br>
+        <label><h4>Email Address</h4></label>
+        <input type = "text" class = "connect__input" name="emailAddress"><br>
+        <label><h4>Message</h4></label>
+        <textarea name = "message"></textarea>
+        <button class = "connect__button" type="submit" form="connectForm" value="Submit">Submit</button>
+      </form>
+
+      <!--FOOTER-->
+      <footer>
+        <div class = "flex-wrapper">
+          <img class = "footer__logo" src="img/homepage/gitHub_logo.png" alt="GitHub Logo">
+          <img class = "footer__logo" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo">
+        </div>
+        <div class = "flex-wrapper">
+          <p>© 2019 Gloria Choi</p>
+        </div>
+      </footer>
+    </section>
+
+      <script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="carousel.js"></script>
+
   </body>
 
 </html>
