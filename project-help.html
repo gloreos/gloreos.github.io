@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stacks</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link rel="icon" href="img/homepage/blackLogo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,600i,700,700i|Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
+  </head>
+  <body>
+    <section class = "background background--darkpurple">
+      <!--NAV-->
+        <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/whiteMenu.png" alt = "menuIcon"></a>
+        <a href="index.html"><img class="nav__logo" src="img/homepage/whiteLogo.png" alt="logo"></a>
+        <div class="nav__drawer" id="sidenav">
+          <a href="javascript:void(0)" class = "nav__button--close" onclick="closeNav()">&times;</a>
+          <a class = "nav__link" href="index.html"><h2>Work</h2></a>
+          <a class = "nav__link" href="about.html"><h2>About</h2></a>
+          <div class = "nav__flex-wrapper">
+            <a href = "github.com"><img class = "nav__logo--github" src="img/homepage/gitHub_logo.png" alt="GitHub Logo"></a>
+            <a href = "linkedin.com"><img class = "nav__logo--linkedin" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo"></a>
+          </div>
+        </div>
+
+      <!--INTRO-->
+      <div class="container">
+        <h1 class = "intro__title">Help Center Audit</h1>
+        <h3 class = "project__intro--description">The Zap Help Center is a database of tutorial articles, helping agents to navigate the Zap CRM.</h3>
+        <img class = "intro__image" src="img/stacks/dashboardDesktop.png" alt="Stacks Dashboard Desktop">
+      </div>
+    </section>
+
+    <!--PROBLEM-->
+    <section class = "background background--white">
+      <div class = "container container--padding">
+        <h2 class = "project__h2">// PROBLEM</h2>
+        <p>Content is outdated and achitecture is whack. As an intern for ZapLabs, I was tasked with going through the articles from our Help Center and identifying outdated articles. The hope was that I could simultaneously learn about our company’s product and help the marketing team with clean-up. But I quickly realized, the Help Center would need more than a little clean up. It was difficult to navigate, outdated, and overwhelming.</p>
+        <p>EARLY KNOWLEDGE BASE, PRIOR TO REDESIGN</p>
+      </div>
+    </section>
+
+    <!--PROCESS-->
+    <section class = "background background--grey">
+      <div class = "container container--padding">
+        <h2 class = "project__h2">// PROCESS</h2>
+        <p>After I transitioned into a full time position, the team endeavored to redesign the Help Center. I conducted an audit of the 76 articles that made up our Help Center and documented the following fields: Article name, Category, Page views in 2018, and Date last updated.</p>
+        <p>With this content audit, I wanted to achieve two main objectives:</p>
+        <ul>
+          <li>Categorize articles into headings and subheadings that make sense</li>
+          <li>Simplify and standardize existing articles</li>
+        </ul>
+        <h3>1. Categorize</h3>
+        <p>Taking the content audit, I combed through each article and began grouping them together according to our company’s user journey map. Then, I made a few tweaks to help make the information easier to access.</p>
+
+      </div>
+    </section>
+
+    <!--FINAL TAKEAWAYS-->
+        <section class = "background background--white">
+          <div class = "container container--padding">
+            <h2 class = "project__h2">// FINAL TAKEAWAYS</h2>
+            <p>Less is more. Agents don’t want to read. Don’t make them.</p>
+            <p>Engage other disciplines. The support team spends most of their days engaging with agents and helping to resolve their issues. They had a good grasp of where our help content was lacking.</p>
+            <h3 class = "project__h3">Steps for improvement</h3>
+            <p>Conduct a card sort. Next time, I would like to conduct a card sort with our agents. That way, we could rest assured that the categories we proposed made sense to our end user.</p>
+          </div>
+        </section>
+
+    <!--LETS CONNECT-->
+    <section class = "background background--lightpurple">
+      <div class = "container__connect--padding container">
+          <h2 class = "homepage__h2">LET'S CONNECT</h2>
+          <p>Thanks for stopping by. Want to chat? I’d love to grab a drink and talk  writing or design. Reach me on LinkedIn or send me a message.</p>
+      </div>
+      <form class="form__container" action="https://formspree.io/email@domain.tld" method="POST">
+        <label><h4>Name</h4></label>
+        <input type="text" name="firstLastName"><br>
+        <label><h4>Email Address</h4></label>
+        <input type = "text" class = "connect__input" name="emailAddress"><br>
+        <label><h4>Message</h4></label>
+        <textarea name = "message"></textarea>
+        <button class = "connect__button" type="submit" form="connectForm" value="Submit">Submit</button>
+      </form>
+
+      <!--FOOTER-->
+      <footer>
+        <div class = "flex-wrapper">
+          <img class = "footer__logo" src="img/homepage/gitHub_logo.png" alt="GitHub Logo">
+          <img class = "footer__logo" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo">
+        </div>
+        <div class = "flex-wrapper">
+          <p>© 2019 Gloria Choi</p>
+        </div>
+      </footer>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="carousel.js"></script>
+  </body>
+</html>

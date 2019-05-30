@@ -79,12 +79,17 @@ footer {
 
 .container--padding {
   padding-top: 4rem;
-  padding-bottom: 12rem;
+  padding-bottom: 8rem;
 }
 
 .container__connect--padding {
   padding-top: 4rem;
   padding-bottom: 8rem;
+}
+
+.container__carousel {
+  margin-top: -8rem;
+  margin-bottom: 8rem;
 }
 
 .flex-wrapper {
@@ -187,7 +192,7 @@ footer {
 .background--orange {
   background-color: #FEECE0;
   background-image: url("../img/homepage/orangeRectangle.svg");
-  background-position: center center;
+  background-position: 50% 52%;
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -319,8 +324,7 @@ footer {
 }
 
 .design__caption {
-  margin-top: 26%;
-  margin-left: 10px;
+  margin-left: 15%;
 }
 
 
@@ -388,7 +392,7 @@ footer {
   grid-column: 1 / span 8;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .carousel-control-prev-icon {
@@ -403,13 +407,14 @@ footer {
 
 .carousel img {
   width: 80%;
+  margin-top: -10%;
+  margin-bottom: -10%;
 }
 
 /** About **/
 .about__logo{
   width: 60px;
   padding-top: 60px;
-  padding-bottom: 40px;
 }
 
 /** Media Queries**/
