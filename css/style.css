@@ -15,7 +15,6 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6rem;
   font-family: Montserrat;
   font-weight: 600;
 }
@@ -37,7 +36,7 @@ p, li {
   padding-top: .5rem;
 }
 
-h1, h2, p, h3, h4, img, ul{
+h1, h2, p, h3, h4, h5, img, ul{
   grid-column: 1 / span 8;
 }
 
@@ -67,15 +66,61 @@ footer {
   margin-top: 75px;
 }
 
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  p, li {
+    font-size: 1.6rem;
+  }
+
+  h1, h2, p, h3, h4, h5, img, ul{
+    grid-column: 1 / span 12;
+  }
+
+  input, label {
+    grid-column: 1 / span 12;
+  }
+
+  textarea {
+    grid-column: 1 / span 12;
+    width: 100%;
+    height: 80px;
+  }
+}
+
 /** LAYOUT RULES **/
 .container {
-  column-gap: .9rem;
+  column-gap: 1.2rem;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   padding-right: 3rem;
   padding-left: 3rem;
 }
+
+@media screen and (min-width: 800px) {
+  .container {
+    column-gap: 4rem;
+    grid-template-columns: repeat(12, 1fr);
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+
 
 .container--padding {
   padding-top: 4rem;
@@ -91,14 +136,20 @@ footer {
   margin-top: -8rem;
   margin-bottom: 8rem;
 }
+
 .container__half2 {
   align-self: center;
+}
+
+.image__caption {
+  justify-self: center;
 }
 
 .align-wrapper {
   display: flex;
   align-items: center;
 }
+
 .flex-wrapper {
   display: flex;
   justify-content: center;
@@ -149,6 +200,27 @@ footer {
   margin-top: -80px;
   padding-right: 30px;
   padding-left: 30px;
+}
+
+@media screen and (min-width: 800px) {
+  .container__all {
+    grid-column: 1 / span 12;
+  }
+
+  .container__half1 {
+    grid-column: 1 / span 6;
+    width:100%;
+  }
+
+  .container__half2 {
+    grid-column: 7 / span 6;
+    width:100%;
+  }
+
+  .form__container {
+    column-gap: 4rem;
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
 
 /**Heading Structures**/
@@ -221,15 +293,20 @@ footer {
   background-color: #FFFFFF;
   background-image: url("../img/stacks/carouselBack.svg");
   background-position: center top;
-  grid-column: 1 /9;
+  grid-column: 1 / span 8;
   background-repeat: no-repeat;
   background-size: 120%;
 }
 
-
+.background__help--carousel {
+  background-color: #F0F0F0;
+  background-position: center top;
+  grid-column: 1 / span 8;
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
 
 /** THEME RULES **/
-
 /**Navigation**/
 .nav__logo {
   left: 3rem;
@@ -403,14 +480,24 @@ footer {
   margin-top: 40px;
 }
 
-.carousel-control-prev-icon {
+.carousel__higharrow--left {
   margin-left: -70px;
   margin-bottom: 150px;
 }
 
-.carousel-control-next-icon {
+.carousel__higharrow--right {
   margin-right: -70px;
   margin-bottom: 150px;
+}
+
+.carousel__lowarrow--left {
+  margin-left: -70px;
+  margin-bottom: 50%;
+}
+
+.carousel__lowarrow--right {
+  margin-right: -70px;
+  margin-bottom: 50%;
 }
 
 .carousel img {
@@ -427,10 +514,14 @@ footer {
 
 /** Media Queries**/
 
-@media screen and (min-width: 700px) {
-
+@media screen and (min-width: 420px) {
+  .carousel img {
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
+}
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 800px) {
 
 }

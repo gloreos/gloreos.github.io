@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stacks</title>
+    <title>Help Center Audit</title>
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <link rel="icon" href="img/homepage/blackLogo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -28,7 +28,7 @@
       <div class="container">
         <h1 class = "intro__title">Help Center Audit</h1>
         <h3 class = "project__intro--description">The Zap Help Center is a database of tutorial articles, helping agents to navigate the Zap CRM.</h3>
-        <img class = "intro__image" src="img/stacks/dashboardDesktop.png" alt="Stacks Dashboard Desktop">
+        <img class = "intro__image" src="img/help/kbDesktop.svg" alt="Help Center Homepage">
       </div>
     </section>
 
@@ -37,7 +37,8 @@
       <div class = "container container--padding">
         <h2 class = "project__h2">// PROBLEM</h2>
         <p>Content is outdated and achitecture is whack. As an intern for ZapLabs, I was tasked with going through the articles from our Help Center and identifying outdated articles. The hope was that I could simultaneously learn about our company’s product and help the marketing team with clean-up. But I quickly realized, the Help Center would need more than a little clean up. It was difficult to navigate, outdated, and overwhelming.</p>
-        <p>EARLY KNOWLEDGE BASE, PRIOR TO REDESIGN</p>
+        <img src="img/help/oldKB.svg" alt="Old Help Center">
+        <p class="image__caption">EARLY HELP CENTER, PRIOR TO REDESIGN</p>
       </div>
     </section>
 
@@ -53,6 +54,150 @@
         </ul>
         <h3>1. Categorize</h3>
         <p>Taking the content audit, I combed through each article and began grouping them together according to our company’s user journey map. Then, I made a few tweaks to help make the information easier to access.</p>
+
+        <p><span>LONG LISTS > SCANNABLE LISTS</span></p>
+        <p>Lacking any hierarchy, the Knowledge Base was difficult to navigate. I broke up the articles into smaller subsections.</p>
+
+          <div class="container background__help--carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="flex-wrapper">
+                    <h3>BEFORE</h3>
+                  </div>
+                  <div class="flex-wrapper">
+                    <img src="img/help/longLists.svg" alt="Stacks Lo-fi">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="flex-wrapper">
+                    <h3>AFTER</h3>
+                  </div>
+                  <div class="flex-wrapper">
+                    <img src="img/help/scannableLists.svg" alt="Stacks Hi-fi">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel__lowarrow--left carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel__lowarrow--right carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+        <p><span>FEATURE-FOCUSED HEADINGS > ACTIONABLE HEADINGS</span></p>
+        <p>The original headings consisted of nouns and feature names. This could be confusing for agents who weren’t familiar with how we titled our features. I developed headings that could be paired to an agent action.</p>
+        <div class="container background__help--carousel">
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex-wrapper">
+                  <h3>BEFORE</h3>
+                </div>
+                <div class="flex-wrapper">
+                  <img src="img/help/featureFocusedHeadings.svg" alt="Stacks Lo-fi">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex-wrapper">
+                  <h3>AFTER</h3>
+                </div>
+                <div class="flex-wrapper">
+                  <img src="img/help/actionableHeadings.svg" alt="Stacks Hi-fi">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
+              <span class="carousel__lowarrow--left carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
+              <span class="carousel__lowarrow--right carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+
+        <p><span>INCONSISTENT GROUPINGS > INTUITIVE GROUPINGS</span></p>
+        <p>Some closely-related articles were grouped into separate categories. For example, “Local Insights” and “Property Insights” were categorized under Requests and Tasks and Zap Website and Apps, respectively. For the redesign, I made sure to group like features together.</p>
+
+
+        <h3>2. Simplify</h3>
+        <p>I interviewed stakeholders, including the Customer Support team, to discover areas for improvement. Our main takeaways from these conversations was that these tutorial articles were too long and too wordy.</p>
+        <p><span>LONG ARTICLES > SHORTER ARTICLES</span></p>
+        <p>The Knowledge Base articles were wordy and hard to scan. We cut down needless copy.</p>
+
+        <div class="container background__help--carousel">
+          <div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex-wrapper">
+                  <h3>BEFORE</h3>
+                </div>
+                <div class="flex-wrapper">
+                  <img src="img/help/longArticles.svg" alt="Stacks Lo-fi">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex-wrapper">
+                  <h3>AFTER</h3>
+                </div>
+                <div class="flex-wrapper">
+                  <img src="img/help/shorterArticles.svg" alt="Stacks Hi-fi">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel3" role="button" data-slide="prev">
+              <span class="carousel__lowarrow--left carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel3" role="button" data-slide="next">
+              <span class="carousel__lowarrow--right carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+
+        <p><span>WALLS OF TEXT > VIDEOS AND IMAGES</span></p>
+        <p>Agents were frustrated by having to read, so we added more pictures.</p>
+        <div class="container background__help--carousel">
+          <div id="myCarousel4" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex-wrapper">
+                  <h3>BEFORE</h3>
+                </div>
+                <div class="flex-wrapper">
+                  <img src="img/help/article__before.svg" alt="Stacks Lo-fi">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex-wrapper">
+                  <h3>AFTER</h3>
+                </div>
+                <div class="flex-wrapper">
+                  <img src="img/help/article__after.svg" alt="Stacks Hi-fi">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel4" role="button" data-slide="prev">
+              <span class="carousel__lowarrow--left carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel4" role="button" data-slide="next">
+              <span class="carousel__lowarrow--right carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+
 
       </div>
     </section>
