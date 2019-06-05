@@ -40,7 +40,7 @@ h1, h2, p, h3, h4, h5, img, ul{
   grid-column: 1 / span 8;
 }
 
-img {
+img, iframe {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -87,7 +87,7 @@ footer {
     font-size: 1.6rem;
   }
 
-  h1, h2, p, h3, h4, h5, img, ul{
+  h1, h2, p, h3, h4, h5, img, ul, iframe{
     grid-column: 1 / span 12;
   }
 
@@ -271,9 +271,9 @@ footer {
 .background--orange {
   background-color: #FEECE0;
   background-image: url("../img/homepage/orangeRectangle.svg");
-  background-position: 50% 60%;
+  background-position: 50% 66%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 170%;
 
 }
 
