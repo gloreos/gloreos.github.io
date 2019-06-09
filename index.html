@@ -11,10 +11,9 @@
   </head>
   <body>
 
-    <section class="background background--darkpurple">
+    <section class="background background--darkpurple1">
     <!--NAV-->
       <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/whiteMenu.png" alt = "menuIcon"></a>
-      <img class="nav__logo" src="img/homepage/whiteLogo.png" alt="logo">
       <div class="nav__drawer" id="sidenav">
         <a href="javascript:void(0)" class = "nav__button--close" onclick="closeNav()">&times;</a>
         <a class = "nav__link" href="index.html"><h2>Work</h2></a>
@@ -24,41 +23,35 @@
           <a href = "linkedin.com"><img class = "nav__logo--linkedin" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo"></a>
         </div>
       </div>
+
     <!--INTRO-->
       <div class="intro container">
-        <h1 class = "intro__title">Gloria Choi</h1>
+        <div class="intro__wrapper">
+          <img class="nav__logo1" src="img/homepage/whiteLogo.png" alt="logo">
+          <h1 class = "intro__title1">Gloria Choi</h1>
+        </div>
         <h3 class = "intro__description">A San Jose-based UX’er with a background in writing and a delight for design. <a href="about.html">Learn more</a></h3>
       </div>
     </section>
 
 
     <!--WRITING-->
-    <section class="background background--yellow">
+    <section class="background background--white">
       <div class="container--padding container">
-        <h2 class = "homepage__h2">WRITING</h2>
+        <h2 class = "homepage__h2">My Work</h2>
         <a href = "project-help.html" class = "container__half1"><img class = "homepage__image" src = "img/homepage/kbDesktop.svg" alt = "Knowledge Base Desktop"></a>
         <a href="project-other.html" class="container__half2"><img class = "homepage__image" src = "img/homepage/uxwritingPhone.svg" alt = "Examples of UX Writing"></a>
-        <p class="container__half1"><span>Help Center:</span> A database of tutorial articles helping agents navigate Zap. </p>
-        <p class="container__half2"><span>Other Writings:</span> Writing for human interfaces and more.</p>
-      </div>
-    </section>
-
-    <!-- Put images in container half 1 and captions in container half 2. Then give the captions some left padding.-->
-
-
-  <!--DESIGN-->
-    <section class="background background--orange">
-      <div class = "container--padding container">
-        <h2 class="homepage__h2">DESIGN</h2>
+        <p class="container__half1 caption"><span class="bold">ZAPLABS HELP CENTER</span></p>
+        <p class="container__half2a caption"><span class="bold">ZAPLABS OTHER WRITINGS</span></p>
         <a href="project-stacks.html" class = "container__half1"><img class = "homepage__image" src = "img/homepage/stacks-homepage.svg" alt = "Knowledge Base Desktop"></a>
-        <p class = "container__half2 design__caption"><span>Stacks:</span> A traditional cloud storage platform with a special emphasis on collaboration.</p>
+        <p class = "container__half1 caption"><span class="bold">STACKS DESIGN</span></p>
       </div>
     </section>
 
     <!--LETS CONNECT-->
     <section class = "background background--lightpurple">
       <div class = "container__connect--padding container">
-          <h2 class = "homepage__h2">LET'S CONNECT</h2>
+          <h2 class = "homepage__h2">Let's Connect</h2>
           <p>Thanks for stopping by. Want to chat? I’d love to grab a drink and talk  writing or design. Reach me on LinkedIn or send me a message.</p>
       </div>
       <form class="form__container" action="https://formspree.io/choi.gloria99@gmail.com" method="POST">
