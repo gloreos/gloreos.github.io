@@ -70,6 +70,32 @@ p, li {
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    h3 /*tagline*/ {
+      font-size: 2.4rem;
+    }
+
+    h4 { /*label*/
+      font-size: 1.4rem;
+    }
+
+    p, li {
+      font-size: 1.8rem;
+    }
+
+    .caption {
+      font-size: 1.8rem;
+    }
+  }
+
 p span.bold {
   font-weight: 600;
 }
@@ -97,33 +123,27 @@ img {
 }
 
 input, label {
-  grid-column: 1 / span 8;
   width: 100%;
   height: 25px;
+  max-width: 520px;
 }
 
 textarea {
-  grid-column: 1 / span 8;
   width: 100%;
   height: 80px;
+  max-width: 520px;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
-  @media screen and (min-width: 768px){
-    input, label {
-      grid-column: 2 / 12;
-    }
+input {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
 
-    input {
-      margin-top: -10px;
-      margin-bottom: 20px;
-    }
-
-    textarea {
-      grid-column: 2 / 12;
-      width: 100%;
-      height: 80px;
-      margin-top: -10px;
-      margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    input, textarea, label {
+      max-width: 740px;
     }
   }
 
@@ -158,13 +178,17 @@ footer {
   padding-bottom: 0;
 }
 
-.intro__title1 {
+.intro__title {
   padding-left: 9px;
   padding-bottom: 0px;
 }
 
+.project__title {
+  padding-top: 10rem;
+}
+
 @media screen and (min-width: 768px) {
-  .intro__title1, .intro__title {
+  .intro__title {
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -237,6 +261,15 @@ footer {
       }
     }
 
+    @media screen and (min-width: 1200px) {
+      .form__container {
+        column-gap: 4rem;
+        grid-template-columns: repeat(12, 1fr);
+        padding-right: 20rem;
+        padding-left: 20rem;
+      }
+    }
+
 /**WRAPPERS**/
 
 .align-wrapper {
@@ -247,6 +280,7 @@ footer {
 .flex-wrapper {
   display: flex;
   justify-content: center;
+  grid-column: 1 / span 12;
 }
 
 .intro__wrapper {
@@ -266,6 +300,16 @@ footer {
   display: flex;
   justify-content: left;
   padding-left: 8%;
+}
+
+.form__wrapper {
+  display: block;
+  text-align: center;
+  grid-column: 1 / span 12;
+}
+
+.form__wrapper label {
+  text-align: left;
 }
 
 /**GRID STRUCTURE**/
@@ -467,13 +511,13 @@ footer {
 }
 
 /**Intro and Footer**/
-.intro__title, .intro__title1, .intro__description {
+.intro__title, .project__title, .intro__description {
   color: #FFFFFF;
 }
 
 .project__intro--description {
   color: #FFFFFF;
-  padding-bottom: 2rem;
+  margin-bottom: 0px;
 }
 
 .footer__logo {
@@ -490,14 +534,14 @@ footer {
   font-family: Source Sans Pro;
   font-size: 1.6rem;
   font-weight: 600;
-  grid-column: 1 / span 3;
+  width: 175px;
   height: 40px;
   margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .connect__button {
-    grid-column: 2 / span 3;
+    grid-column: 250px;
   }
 }
 
@@ -535,6 +579,7 @@ footer {
 .intro__button1 {
   height: 40px;
   color: #7EA0DE;
+  margin-top: 20px;
 }
 
 .intro__button2{
@@ -543,6 +588,7 @@ footer {
   border-width: 3px;
   color: #FFFFFF;
   border-color: #FFFFFF;
+  margin-top: 20px;
 }
 
 .research__ul {
