@@ -5,6 +5,7 @@
 /**TYPOGRAPHY**/
 html {
   font-size: 10px;
+  color: #333333;
 }
 
 h1, h2, p, h3, h4, h5, img, ul{
@@ -20,6 +21,12 @@ h1, h2, p, h3, h4, h5, img, ul{
 h1, h2, h4 {
   font-family: Montserrat;
   font-weight: 600;
+}
+
+h5 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 h3, p, li {
@@ -157,8 +164,8 @@ footer {
 }
 
 .intro {
-  padding-bottom: 13rem;
-  padding-top: 3rem;
+  padding-bottom: 13.5rem;
+  padding-top: 4rem;
 }
 
 /**Heading Structures**/
@@ -185,15 +192,26 @@ footer {
 
 .project__title {
   padding-top: 10rem;
+  color: #000000;
 }
 
 @media screen and (min-width: 768px) {
   .intro__title {
-    padding-top: 0px;
+    padding-top: 20px;
     padding-bottom: 0px;
   }
   .intro__description {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro__title {
+    padding-top: 20px;
     padding-bottom: 0px;
+  }
+  .intro__description {
+    padding-bottom: 20px;
   }
 }
 
@@ -450,7 +468,7 @@ footer {
 @media screen and (min-width: 768px) {
   .nav__logo1 {
     margin-right: 5px;
-    margin-top: 5px;
+    margin-top: 25px;
     width: 50px;
     height: 50px;
   }
@@ -482,6 +500,7 @@ footer {
   top: 1rem;
   font-size: 36px;
   right: 3rem;
+  color: #000000;
 }
 
 .nav__link {
@@ -511,12 +530,12 @@ footer {
 }
 
 /**Intro and Footer**/
-.intro__title, .project__title, .intro__description {
+.intro__title, .intro__description {
   color: #FFFFFF;
 }
 
 .project__intro--description {
-  color: #FFFFFF;
+  color: #000000;
   margin-bottom: 0px;
 }
 
@@ -666,7 +685,7 @@ footer {
 
 /** Media Queries**/
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 768px) {
   .carousel img {
     width: 80%;
     margin-top: 0;
