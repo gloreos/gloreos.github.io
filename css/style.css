@@ -113,7 +113,14 @@ p span.italics {
 
 a {
   text-decoration: underline;
-  color: white;
+}
+
+a.intro__link {
+  color: #FFFFFF;
+}
+
+a.intro__link:hover {
+  color: #DBDBDB;
 }
 
 .caption {
@@ -593,21 +600,21 @@ footer {
   font-family: Source Sans Pro;
   font-weight: 600;
   border-radius: 35px;
-}
-
-.intro__button1 {
   height: 40px;
-  color: #7EA0DE;
   margin-top: 20px;
 }
 
-.intro__button2{
-  height: 40px;
-  background-color: #7EA0DE;
+.intro__button2 {
+  background-color: #E1EBFC;
   border-width: 3px;
+  border-color: #7EA0DE;
+  color: #7EA0DE;
+}
+
+.intro__button1{
+  background-color: #7EA0DE;
   color: #FFFFFF;
-  border-color: #FFFFFF;
-  margin-top: 20px;
+  border-width: 0;
 }
 
 .research__ul {

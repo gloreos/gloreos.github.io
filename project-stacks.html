@@ -11,10 +11,10 @@
   </head>
 
   <body>
-    <section class = "background background--darkpurple">
+    <section class = "background background--lightpurple">
       <!--NAV-->
-        <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/whiteMenu.png" alt = "menuIcon"></a>
-        <a href="index.html"><img class="nav__logo" src="img/homepage/whiteLogo.png" alt="logo"></a>
+        <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/blackMenu.svg" alt = "menuIcon"></a>
+        <a href="index.html"><img class="nav__logo" src="img/homepage/blackLogo.svg" alt="logo"></a>
         <div class="nav__drawer" id="sidenav">
           <a href="javascript:void(0)" class = "nav__button--close" onclick="closeNav()">&times;</a>
           <a class = "nav__link" href="index.html"><h2>Work</h2></a>
@@ -170,119 +170,28 @@
 
           <h3 class = "project__h3">Deep Dive: Organization</h3>
           <p>I learned several insights from my rounds of user testing, but the “organization” flow was the most challenging to act on.</p>
+
+          <h3>BEFORE</h3>
+          <img src="img/stacks/iteration1a.svg" alt="Stacks Lo-fi">
+          <p>People understood the copy, <span>Workspace</span> as a folder. They were confused that clicking <span>Project</span> would open up another folder.</p>
+          <h3>AFTER</h3>
+          <img src="img/stacks/iteration1b.svg" alt="Stacks Hi-fi">
+          <p>Changed <span>Workspace</span> to <span>Dashboard</span> and <span>Project</span> to <span>Workspace</span>. The dashboard gives a general overview, whereas the workspace functions as a folder.</p>
+
+          <h3>BEFORE</h3>
+          <img src="img/stacks/iteration2a.svg" alt="Stacks Lo-fi">
+          <p>When asked to upload a photo, users were drawn to the big plus button under “Recent Projects” and completely missed the tiny ghost button, labelled “+Add”.</p>
+          <h3>AFTER</h3>
+          <img src="img/stacks/iteration2b.svg" alt="Stacks Hi-fi">
+          <p>Removed the large button on the left navigation and changed the CTA to a primary button.</p>
+
+          <h3>BEFORE</h3>
+          <img src="img/stacks/iteration3a.svg" alt="Stacks Lo-fi">
+          <p>The copy, “Main Stacks” was supposed to be a section for important files. It was supposed to be a play on the product name, “Stacks,” but really, it was just confusing.</p>
+          <h3>AFTER</h3>
+          <img src="img/stacks/iteration3b.svg" alt="Stacks Hi-fi">
+          <p>After a round of preference testing, changed “Main Stacks” to simply, “Pinned items”.</p>
         </div>
-
-        <div class="container__carousel">
-          <div class="container background__project--carousel">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="flex-wrapper">
-                    <h3>BEFORE</h3>
-                  </div>
-                  <div class="flex-wrapper">
-                    <img src="img/stacks/iteration1a.svg" alt="Stacks Lo-fi">
-                  </div>
-                  <div class="flex-wrapper">
-                    <p>People understood the copy, <span>Workspace</span> as a folder. They were confused that clicking <span>Project</span> would open up another folder.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="flex-wrapper">
-                    <h3>AFTER</h3>
-                  </div>
-                  <div class="flex-wrapper">
-                    <img src="img/stacks/iteration1b.svg" alt="Stacks Hi-fi">
-                  </div>
-                  <div class="flex-wrapper">
-                    <p>Changed <span>Workspace</span> to <span>Dashboard</span> and <span>Project</span> to <span>Workspace</span>. The dashboard gives a general overview, whereas the workspace functions as a folder.</p>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon carousel__higharrow--left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon carousel__higharrow--right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="container background__project--carousel">
-            <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="flex-wrapper">
-                    <h3>BEFORE</h3>
-                  </div>
-                  <div class="flex-wrapper">
-                    <img src="img/stacks/iteration2a.svg" alt="Stacks Lo-fi">
-                  </div>
-                  <p>When asked to upload a photo, users were drawn to the big plus button under “Recent Projects” and completely missed the tiny ghost button, labelled “+Add”.</p>
-                </div>
-                <div class="carousel-item">
-                  <div class="flex-wrapper">
-                    <h3>AFTER</h3>
-                  </div>
-                  <div class="flex-wrapper">
-                    <img src="img/stacks/iteration2b.svg" alt="Stacks Hi-fi">
-                  </div>
-                  <div class="flex-wrapper">
-                    <p>Removed the large button on the left navigation and changed the CTA to a primary button.</p>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon carousel__higharrow--left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
-                <span class="carousel-control-next-icon carousel__higharrow--right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="container background__project--carousel">
-            <div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="flex-wrapper">
-                    <h3>BEFORE</h3>
-                  </div>
-                  <div class="flex-wrapper">
-                    <img src="img/stacks/iteration3a.svg" alt="Stacks Lo-fi">
-                  </div>
-                  <div class="flex-wrapper">
-                    <p>The copy, “Main Stacks” was supposed to be a section for important files. It was supposed to be a play on the product name, “Stacks,” but really, it was just confusing.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="flex-wrapper">
-                    <h3>AFTER</h3>
-                  </div>
-                  <div class="flex-wrapper">
-                    <img src="img/stacks/iteration3b.svg" alt="Stacks Hi-fi">
-                  </div>
-                  <div class="flex-wrapper">
-                    <p>After a round of preference testing, changed “Main Stacks” to simply, “Pinned items”.</p>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#myCarousel3" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon carousel__higharrow--left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#myCarousel3" role="button" data-slide="next">
-                <span class="carousel-control-next-icon carousel__higharrow--right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
-    </section>
 
 <!--FINAL TAKEAWAYS-->
     <section class = "background background--grey">
@@ -324,13 +233,6 @@
         </div>
       </footer>
     </section>
-
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="carousel.js"></script>
-
-
   </body>
 
 </html>
