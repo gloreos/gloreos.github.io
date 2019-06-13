@@ -12,12 +12,15 @@
   <body>
     <section class = "background background--lightpurple">
       <!--NAV-->
-        <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/blackMenu.svg" alt = "menuIcon"></a>
-        <a href="index.html"><img class="nav__logo" src="img/homepage/blackLogo.png" alt="logo"></a>
-        <div class="nav__drawer" id="sidenav">
+      <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/blackMenu.svg" alt = "menuIcon"></a>
+      <a href="index.html"><img class="nav__logo" src="img/homepage/blackLogo.png" alt="logo"></a>
+      <div class="nav__drawer" id="sidenav">
           <a href="javascript:void(0)" class = "nav__button--close" onclick="closeNav()">&times;</a>
-          <a class = "nav__link" href="index.html"><h2>Work</h2></a>
-          <a class = "nav__link" href="about.html"><h2>About</h2></a>
+          <a class = "nav__link" href="index.html"><h5>Home</h5></a>
+          <a class = "nav__link" href="about.html"><h5>About</h5></a>
+          <a class = "nav__link" href="project-help.html"><h5>ZapLabs | Help Center</h5></a>
+          <a class = "nav__link" href="project-other.html"><h5>ZapLabs | Other Writings</h5></a>
+          <a class = "nav__link" href="project-stacks.html"><h5>Stacks | Design</h5></a>
           <div class = "nav__flex-wrapper">
             <a href = "github.com"><img class = "nav__logo--github" src="img/homepage/gitHub_logo.png" alt="GitHub Logo"></a>
             <a href = "linkedin.com"><img class = "nav__logo--linkedin" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo"></a>
@@ -52,37 +55,41 @@
           <li>Categorize articles into headings and subheadings that make sense</li>
           <li>Simplify and standardize existing articles</li>
         </ul>
-        <h3>1. Categorize</h3>
+
+        <div class="flex-wrapper">
+          <h3 class="subsection">Categorize</h3>
+        </div>
         <p>Taking the content audit, I combed through each article and began grouping them together according to our company’s user journey map. Then, I made a few tweaks to help make the information easier to access.</p>
 
-        <p><span class="bold">LONG LISTS > SCANNABLE LISTS</span> Lacking any hierarchy, the Knowledge Base was difficult to navigate. I broke up the articles into smaller subsections.</p>
-        <img src="img/help/longLists.svg" alt="Stacks Lo-fi">
-        <p class="image__caption">BEFORE: LONG LISTS</p>
-        <img src="img/help/scannableLists.svg" alt="Stacks Hi-fi">
-        <p class="image__caption">AFTER: SCANNABLE LISTS</p>
+        <p class="subsection"><span class="bold">LONG LISTS > SCANNABLE LISTS</span> Lacking any hierarchy, the Knowledge Base was difficult to navigate. I broke up the articles into smaller subsections.</p>
+        <img class="container__half1--responsive caption" src="img/help/longLists.svg" alt="Stacks Lo-fi">
+        <img class="container__half2--responsive caption"src="img/help/scannableLists.svg" alt="Stacks Hi-fi">
+        <p class="container__half1--responsive caption">BEFORE: LONG LISTS</p>
+        <p class="container__half2--responsive caption">AFTER: SCANNABLE LISTS</p>
 
-        <p><span class="bold">FEATURE-FOCUSE HEADINGS > SCANNABLE HEADINGS</span> The original headings consisted of nouns and feature names. This could be confusing for agents who weren’t familiar with how we titled our features. I developed headings that could be paired to an agent action.</p>
-        <img src="img/help/featureFocusedHeadings.svg" alt="Stacks Lo-fi">
-        <p class="image__caption">BEFORE: FEATURE-FOCUSED HEADINGS</p>
-        <img src="img/help/actionableHeadings.svg" alt="Stacks Hi-fi">
-        <p class="image__caption">AFTER: ACTIONABLE HEADINGS</p>
+        <p class="subsection"><span class="bold">FEATURE-FOCUSE HEADINGS > SCANNABLE HEADINGS</span> The original headings consisted of nouns and feature names. This could be confusing for agents who weren’t familiar with how we titled our features. I developed headings that could be paired to an agent action.</p>
+        <img class="container__half1--responsive caption" src="img/help/featureFocusedHeadings.svg" alt="Stacks Lo-fi">
+        <img class="container__half2--responsive caption" src="img/help/actionableHeadings.svg" alt="Stacks Hi-fi">
+        <p class="container__half1--responsive caption">BEFORE: FEATURE-FOCUSED HEADINGS</p>
+        <p class="container__half2--responsive caption">AFTER: ACTIONABLE HEADINGS</p>
 
-        <p><span class="bold">INCONSISTENT GROUPINGS > INTUITIVE GROUPINGS</span> Some closely-related articles were grouped into separate categories. For example, “Local Insights” and “Property Insights” were categorized under Requests and Tasks and Zap Website and Apps, respectively. For the redesign, I made sure to group like features together.</p>
+        <p class="subsection"><span class="bold">INCONSISTENT GROUPINGS > INTUITIVE GROUPINGS</span> Some closely-related articles were grouped into separate categories. For example, “Local Insights” and “Property Insights” were categorized under Requests and Tasks and Zap Website and Apps, respectively. For the redesign, I made sure to group like features together.</p>
 
-
-        <h3>2. Simplify</h3>
+        <div class="flex-wrapper">
+          <h3 class="subsection">Simplify</h3>
+        </div>
         <p>I interviewed stakeholders, including the Customer Support team, to discover areas for improvement. Our main takeaways from these conversations was that these tutorial articles were too long and too wordy.</p>
-        <p><span class="bold">LONG ARTICLES > SHORTER ARTICLES</span> The Knowledge Base articles were wordy and hard to scan. We cut down needless copy.</p>
-        <img src="img/help/longArticles.svg" alt="Stacks Lo-fi">
-        <p class="image__caption">BEFORE: LONG ARTICLES</p>
-        <img src="img/help/shorterArticles.svg" alt="Stacks Hi-fi">
-        <p class="image__caption">AFTER: SHORTER ARTICLES</p>
+        <p class="subsection"><span class="bold">LONG ARTICLES > SHORTER ARTICLES</span> The Knowledge Base articles were wordy and hard to scan. We cut down needless copy.</p>
+        <img class="container__half1--responsive" src="img/help/longArticles.svg" alt="Stacks Lo-fi">
+        <img class="container__half2--responsive" src="img/help/shorterArticles.svg" alt="Stacks Hi-fi">
+        <p class="container__half1--responsive caption">BEFORE: LONG ARTICLES</p>
+        <p class="container__half2--responsive caption">AFTER: SHORTER ARTICLES</p>
 
-        <p><span class="bold">WALLS OF TEXT > VIDEOS AND IMAGES</span> Agents were frustrated by having to read, so we added more pictures.</p>
-        <img src="img/help/article__before.svg" alt="Stacks Lo-fi">
-        <p class="image__caption">BEFORE: WALLS OF TEXT</p>
-        <img src="img/help/article__after.svg" alt="Stacks Hi-fi">
-        <p class="image__caption">AFTER: VIDEOS AND IMAGES</p>
+        <p class="subsection"><span class="bold">WALLS OF TEXT > VIDEOS AND IMAGES</span> Agents were frustrated by having to read, so we added more pictures.</p>
+        <img class="container__half1--responsive" src="img/help/article__before.svg" alt="Stacks Lo-fi">
+        <img class="container__half2--responsive" src="img/help/article__after.svg" alt="Stacks Hi-fi">
+        <p class="container__half1--responsive caption">BEFORE: WALLS OF TEXT</p>
+        <p class="container__half2--responsive caption">AFTER: VIDEOS AND IMAGES</p>
       </div>
     </section>
 
@@ -129,5 +136,8 @@
             </div>
           </footer>
         </section>
+
+        <script src="script.js"></script>
+
   </body>
 </html>

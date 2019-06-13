@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Gloria Choi</title>
-    <link rel="icon" href="img/homepage/prpleLogo.png">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,600i,700,700i|Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1">
-
-  </head>
+<head>
+  <title>Gloria Choi</title>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1">
+  <link rel="icon" href="img/homepage/blackLogo.png">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600,600i,700,700i|Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
+</head>
   <body>
-    <div class="background background--white">
+    <section class="background background--white">
+        <!--NAV-->
+        <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/blackMenu.svg" alt = "menuIcon"></a>
+        <a href="index.html"><img class="nav__logo" src="img/homepage/blackLogo.png" alt="logo"></a>
+        <div class="nav__drawer" id="sidenav">
+            <a href="javascript:void(0)" class = "nav__button--close" onclick="closeNav()">&times;</a>
+            <a class = "nav__link" href="index.html"><h5>Home</h5></a>
+            <a class = "nav__link" href="about.html"><h5>About</h5></a>
+            <a class = "nav__link" href="project-help.html"><h5>ZapLabs | Help Center</h5></a>
+            <a class = "nav__link" href="project-other.html"><h5>ZapLabs | Other Writings</h5></a>
+            <a class = "nav__link" href="project-stacks.html"><h5>Stacks | Design</h5></a>
+            <div class = "nav__flex-wrapper">
+              <a href = "github.com"><img class = "nav__logo--github" src="img/homepage/gitHub_logo.png" alt="GitHub Logo"></a>
+              <a href = "linkedin.com"><img class = "nav__logo--linkedin" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo"></a>
+            </div>
+        </div>
 
-<!--NAV-->
-  <a href = "#"><img onclick = "openNav()" class = "nav__menu" src = "img/homepage/blackMenu.svg" alt = "menuIcon"></a>
-  <div class="nav__drawer" id="sidenav">
-    <a href="javascript:void(0)" class = "nav__button--close" onclick="closeNav()">&times;</a>
-    <a class = "nav__link" href="index.html"><h2>Work</h2></a>
-    <a class = "nav__link" href="about.html"><h2>About</h2></a>
-    <div class = "nav__flex-wrapper">
-      <a href = "github.com"><img class = "nav__logo--github" src="img/homepage/gitHub_logo.png" alt="GitHub Logo"></a>
-      <a href = "linkedin.com"><img class = "nav__logo--linkedin" src="img/homepage/linkedIn_logo.png" alt="LinkedIn Logo"></a>
-    </div>
-  </div>
-
-<!--ABOUT ME-->
-      <div class = "flex-wrapper">
-        <a href = "index.html"><img class = "about__logo" src = "img/homepage/blackLogo.svg" alt="logo"></a>
+  <!--ABOUT ME-->
+      <div class = "container about__content">
+        <h1 class="flex-wrapper about__title">About Me</h1>
+        <img class="container__half1--responsive about__photo" src="img/aboutPhoto.jpg" alt="Profile Photo">
+        <p class="container__half2--responsive">My passion for design—as my passion for many things—must have begun with a book. Not a design book (not yet), but I’m sure it was some book. Maybe, If You Give a Mouse a Cookie or Diary of a Spider?
+          <br><br>
+          In a roundabout way, reading was my first step into design thinking. Beginning to see the world from another character’s perspective. A cab driver? A government agent? A mother of two? I loved to trace out—not the user’s journey—the hero’s journey.
+          <br><br>My next immersion to design must have been the eleventh grade, when my English teacher taught my class to “gather the evidence” before writing the thesis. You’d think it’s that simple. But then at university, I learned, “there’s always more evidence.” You turn in the best draft you can.
+          <br><br>These small lessons in reading and writing formed the foundation to my design career. I just hadn’t known it yet. When I was finally introduced to that one design book—The Design of Everyday Things?—I thought it was pretty neat. People like the author, Don Norman, were (kind of) doing what I was doing! They asked questions. Why can’t we open our doors? They gathered evidence. People struggle to open this kind of door and that sort of door. They wrote a thesis. We should make these kinds of doors.
+          <br><br>Sounds fun. Why not try? And I jumped in.
+          <br><br>I recently started part-time work as a UX Researcher, and there’s a lot to learn. But I find myself falling into a nice rhythm that reminds me of the writing process.
+          <br><br>I love stories, and strangely enough, I’ve grown into a love for writing essays. Somehow, that’s brought me here. To design. Hello, nice to meet you!
+        </p>
       </div>
-    <section class = "container">
-      <p>My passion for design—as my passion for many things—must have begun with a book. Not a design book (not yet), but I’m sure it was some book. Maybe, If You Give a Mouse a Cookie or Diary of a Spider?</p>
-      <p>In a roundabout way, reading was my first step into design thinking. Beginning to see the world from another character’s perspective. A cab driver? A government agent? A mother of two? I loved to trace out—not the user’s journey—the hero’s journey.</p>
-      <p>My next immersion to design must have been the eleventh grade, when my English teacher taught my class to “gather the evidence” before writing the thesis. You’d think it’s that simple. But then at university, I learned, “there’s always more evidence.” You turn in the best draft you can.</p>
-      <p>These small lessons in reading and writing formed the foundation to my design career. I just hadn’t known it yet. When I was finally introduced to that one design book—The Design of Everyday Things?—I thought it was pretty neat. People like the author, Don Norman, were (kind of) doing what I was doing! They asked questions. Why can’t we open our doors? They gathered evidence. People struggle to open this kind of door and that sort of door. They wrote a thesis. We should make these kinds of doors.</p>
-      <p>Sounds fun. Why not try? And I jumped in.</p>
-      <p>I recently started part-time work as a UX Researcher, and there’s a lot to learn. But I find myself falling into a nice rhythm that reminds me of the writing process.</p>
-      <p>I love stories, and strangely enough, I’ve grown into a love for writing essays. Somehow, that’s brought me here. To design. Hello, nice to meet you!</p>
-    </section>
+
     <!--FOOTER-->
         <footer>
           <div class = "flex-wrapper">
@@ -47,8 +51,7 @@
             <p>© 2019 Gloria Choi</p>
           </div>
         </footer>
-    <script src="script.js"></script>
-  </div>
+      </section>
+      <script src="script.js"></script>
   </body>
-
 </html>

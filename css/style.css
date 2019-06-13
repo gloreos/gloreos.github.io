@@ -13,7 +13,7 @@ h1, h2, p, h3, h4, h5, img, ul{
 }
 
   @media screen and (min-width: 768px){
-    h1, h2, p, h3, h4, h5, img, ul, iframe{
+    h1, h2, p, h3, h4, h5, img, ul{
       grid-column: 1 / span 12;
     }
   }
@@ -108,7 +108,7 @@ p span.bold {
 }
 
 p span.italics {
-  font-weight: 600;
+  font-style: italic;
 }
 
 a {
@@ -126,7 +126,6 @@ a.intro__link:hover {
 .caption {
   text-align: center;
   color: ##575757;
-  font-size: 1.4rem;
 }
 
 /**SIZES**/
@@ -174,6 +173,11 @@ footer {
   padding-bottom: 13.5rem;
   padding-top: 4rem;
 }
+
+.subsection {
+  margin-top: 3rem;
+}
+
 
 /**Heading Structures**/
 .homepage__h2 {
@@ -374,6 +378,18 @@ footer {
     grid-column: 7 / span 6;
     width:100%;
   }
+
+  .container__half1--responsive {
+    grid-column: 1 / span 6;
+    width:100%;
+  }
+
+  .container__half2--responsive {
+    grid-column: 7 / span 6;
+    width:100%;
+  }
+
+
 }
 
 /**BACKGROUNDS**/
@@ -469,24 +485,47 @@ footer {
 .nav__logo {
   position: absolute;
   left: 3rem;
-  top: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .nav__logo1 {
-    margin-right: 5px;
-    margin-top: 25px;
-    width: 50px;
-    height: 50px;
-  }
+  top: 30px;
 }
 
 .nav__menu {
   height: 15px;
   position: absolute;
   right: 3rem;
-  top: 32px;
+  top: 45px;
   width: 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .nav__logo {
+    left: 5rem;
+  }
+
+  .nav__logo1 {
+    margin-right: 5px;
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav__menu {
+    right: 5rem;
+    height: 2rem;
+    width: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__logo {
+    left: 15rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav__menu {
+    right: 15rem;
+  }
 }
 
 .nav__drawer {
@@ -649,45 +688,16 @@ footer {
   height: 70px;
 }
 
-/**CAROUSEL**/
-.carousel {
-  min-width: 200px;
-  grid-column: 1 / span 8;
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.carousel__higharrow--left {
-  margin-left: -70px;
-  margin-bottom: 150px;
-}
-
-.carousel__higharrow--right {
-  margin-right: -70px;
-  margin-bottom: 150px;
-}
-
-.carousel__lowarrow--left {
-  margin-left: -70px;
-  margin-bottom: 50%;
-}
-
-.carousel__lowarrow--right {
-  margin-right: -70px;
-  margin-bottom: 50%;
-}
-
-.carousel img {
-  width: 80%;
-  margin-top: -10%;
-  margin-bottom: -10%;
-}
-
 /** About **/
-.about__logo{
-  width: 60px;
-  padding-top: 60px;
+
+.about__content {
+  margin-top: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about__photo {
+    margin-top: 2.5rem;
+  }
 }
 
 /** Media Queries**/
