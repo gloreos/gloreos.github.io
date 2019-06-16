@@ -111,16 +111,38 @@ p span.italics {
   font-style: italic;
 }
 
+p span.emphasis {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+  @media screen and (min-width: 1200px) {
+    p span.emphasis {
+      font-size: 2.4rem;
+    }
+  }
+
 a {
   text-decoration: underline;
+  font-weight: 600;
+  color: #000;
+}
+
+a:hover {
+  color: #7EA0DE;
+}
+
+a.intro__link:hover {
+  color: #DBDBDB;
 }
 
 a.intro__link {
   color: #FFFFFF;
 }
 
-a.intro__link:hover {
-  color: #DBDBDB;
+a.list__link {
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .caption {
@@ -569,6 +591,11 @@ footer {
 }
 
 .nav__link:hover {
+  color: #7EA0DE;
+  text-decoration: none;
+}
+
+.nav__link.selected {
   color: #7EA0DE;
 }
 
