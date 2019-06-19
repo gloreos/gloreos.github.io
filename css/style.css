@@ -8,6 +8,7 @@ html {
   color: #333333;
 }
 
+/**TYPOGRAPHY GRID**/
 h1, h2, p, h3, h4, h5, img, ul{
   grid-column: 1 / span 8;
 }
@@ -18,21 +19,23 @@ h1, h2, p, h3, h4, h5, img, ul{
     }
   }
 
+/**TYPOGRAPHY FONT STYLE**/
 h1, h2, h4 {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-weight: 600;
 }
 
 h5 {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 1.6rem;
 }
 
 h3, p, li {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
 }
 
+/**TYPOGRAPHY FONT SIZE**/
 h1 {
   font-size: 2.4rem;
 }
@@ -55,6 +58,7 @@ p, li {
   padding-top: .5rem;
 }
 
+/**TYPOGRAPHY FONT SIZE**/
   @media screen and (min-width: 768px) {
     h1 {
       font-size: 3.2rem;
@@ -77,6 +81,7 @@ p, li {
     }
   }
 
+/**TYPOGRAPHY FONT SIZE**/
   @media screen and (min-width: 1200px) {
     h1 {
       font-size: 4rem;
@@ -97,12 +102,9 @@ p, li {
     p, li {
       font-size: 1.8rem;
     }
-
-    .caption {
-      font-size: 1.8rem;
-    }
   }
 
+/**SPAN STYLES**/
 p span.bold {
   font-weight: 600;
 }
@@ -116,12 +118,14 @@ p span.emphasis {
   font-weight: 600;
 }
 
+/**SPAN STYLES**/
   @media screen and (min-width: 1200px) {
     p span.emphasis {
       font-size: 2.4rem;
     }
   }
 
+/**LINKS**/
 a {
   text-decoration: underline;
   font-weight: 600;
@@ -145,43 +149,40 @@ a.list__link {
   text-decoration: none;
 }
 
-.caption {
-  text-align: center;
-  color: ##575757;
-}
-
-/**SIZES**/
+/**STRUCTURES**/
 img {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-input, label {
-  width: 100%;
+input, label { /*form items*/
   height: 25px;
   max-width: 520px;
-}
-
-textarea {
   width: 100%;
+}
+
+textarea { /*form items*/
   height: 80px;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  width: 100%;
   max-width: 520px;
+}
+
+input { /*form items*/
   margin-top: -10px;
   margin-bottom: 20px;
 }
 
-input {
-  margin-top: -10px;
-  margin-bottom: 20px;
-}
-
+/**STRUCTURES**/
   @media screen and (min-width: 1200px) {
-    input, textarea, label {
+    input, textarea, label { /*form items*/
       max-width: 740px;
     }
   }
 
+/**STRUCTURES**/
 footer {
   margin-top: 75px;
 }
@@ -201,7 +202,7 @@ footer {
 }
 
 
-/**Heading Structures**/
+/**HEADING STRUCTURES**/
 .homepage__h2 {
   padding-top: 50px;
   padding-bottom: 25px;
@@ -228,6 +229,7 @@ footer {
   color: #000000;
 }
 
+/**HEADING STRUCTURES**/
 @media screen and (min-width: 768px) {
   .intro__title {
     padding-top: 20px;
@@ -238,6 +240,7 @@ footer {
   }
 }
 
+/**HEADING STRUCTURES**/
 @media screen and (min-width: 1200px) {
   .intro__title {
     padding-top: 20px;
@@ -258,6 +261,7 @@ footer {
   padding-left: 3rem;
 }
 
+/** CONTAINERS **/
     @media screen and (min-width: 768px) {
       .container {
         column-gap: 2rem;
@@ -267,6 +271,7 @@ footer {
       }
     }
 
+/** CONTAINERS **/
     @media screen and (min-width: 1200px) {
       .container {
         column-gap: 4rem;
@@ -276,7 +281,7 @@ footer {
       }
     }
 
-
+/** CONTAINERS **/
 .container--padding {
   padding-top: 4rem;
   padding-bottom: 8rem;
@@ -285,11 +290,6 @@ footer {
 .container__connect--padding {
   padding-top: 4rem;
   padding-bottom: 8rem;
-}
-
-.container__carousel {
-  margin-top: -8rem;
-  margin-bottom: 8rem;
 }
 
 .form__container {
@@ -302,6 +302,7 @@ footer {
   padding-left: 30px;
 }
 
+/** CONTAINERS **/
     @media screen and (min-width: 768px) {
       .form__container {
         column-gap: 2rem;
@@ -312,6 +313,7 @@ footer {
       }
     }
 
+/** CONTAINERS **/
     @media screen and (min-width: 1200px) {
       .form__container {
         column-gap: 4rem;
@@ -322,7 +324,6 @@ footer {
     }
 
 /**WRAPPERS**/
-
 .align-wrapper {
   display: flex;
   align-items: center;
@@ -430,6 +431,7 @@ footer {
   background-color: #7EA0DE;
 }
 
+/**BACKGROUNDS**/
 @media screen and (min-width: 768px) {
   .background--darkpurple1 {
     background-color: #7EA0DE;
@@ -440,6 +442,7 @@ footer {
   }
 }
 
+/**BACKGROUNDS**/
 .background--yellow {
   background-color: #FFFAE6;
   background-image: url("../img/homepage/oval.svg");
@@ -448,6 +451,7 @@ footer {
 
 }
 
+/**BACKGROUNDS**/
 @media screen and (min-width: 768px) {
   .background--yellow {
     background-image: url("../img/homepage/yellowCircle__768.svg");
@@ -455,6 +459,7 @@ footer {
   }
 }
 
+/**BACKGROUNDS**/
 .background__about--yellow {
   background-color: #FFFAE6;
   background-image: url("../img/homepage/oval_about.svg");
@@ -471,6 +476,7 @@ footer {
   background-size: 170%;
 }
 
+/**BACKGROUNDS**/
 @media screen and (min-width: 768px) {
   .background--orange {
     background-position: 50% 62%;
@@ -479,6 +485,7 @@ footer {
   }
 }
 
+/**BACKGROUNDS**/
 .background--lightpurple {
   background-color: #E1EBFC;
 }
@@ -491,25 +498,7 @@ footer {
   background-color: #F0F0F0;
 }
 
-.background__project--carousel {
-  background-color: #FFFFFF;
-  background-image: url("../img/stacks/carouselBack.svg");
-  background-position: center top;
-  grid-column: 1 / span 8;
-  background-repeat: no-repeat;
-  background-size: 120%;
-}
-
-.background__help--carousel {
-  background-color: #F0F0F0;
-  background-position: center top;
-  grid-column: 1 / span 8;
-  background-repeat: no-repeat;
-  background-size: 120%;
-}
-
-/** THEME RULES **/
-/**Navigation**/
+/**NAVIGATION**/
 .nav__logo1, .nav__logo {
   width: 40px;
   height: 40px;
@@ -529,7 +518,7 @@ footer {
   width: 2rem;
 }
 
-
+/**NAVIGATION**/
 @media screen and (min-width: 768px) {
   .nav__logo {
     left: 5rem;
@@ -549,6 +538,7 @@ footer {
   }
 }
 
+/**NAVIGATION**/
 @media screen and (min-width: 1200px) {
   .nav__logo {
     left: 15rem;
@@ -561,6 +551,7 @@ footer {
   }
 }
 
+/**NAVIGATION**/
 .nav__drawer {
   height: 100%;
   width: 0;
@@ -613,7 +604,7 @@ footer {
   margin-left: 10px;
 }
 
-/**Intro and Footer**/
+/**INTRO AND FOOTER**/
 .intro__title, .intro__description {
   color: #FFFFFF;
 }
@@ -629,12 +620,12 @@ footer {
   margin: 0 3px;
 }
 
-/**Connect Form**/
+/**CONNECT FORM**/
 .connect__button {
   background-color: #5D84CB;
   border-radius: 35px;
   color: #FFFFFF;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   font-size: 1.6rem;
   font-weight: 600;
   width: 175px;
@@ -648,25 +639,13 @@ footer {
   }
 }
 
-/**Homepage**/
-.homepage__image {
+/**HOMEPAGE**/
+.caption {
+  text-align: center;
+  color: #575757;
 }
 
-.writing__image1 {
-  width: 50%;
-}
-
-.design__caption {
-  margin-top: 5%;
-  margin-left: 5%;
-}
-
-.image__caption {
-  justify-self: center;
-}
-
-
-/** Portfolio **/
+/** PROJECTS **/
 
 .intro__image {
     padding-top: 7rem;
@@ -674,7 +653,7 @@ footer {
 
 .intro__button1, .intro__button2 {
   font-size: 1.6rem;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   font-weight: 600;
   border-radius: 35px;
   height: 40px;
@@ -735,7 +714,7 @@ ul.andMore {
   padding-left: 0;
 }
 
-/** About **/
+/** ABOUT **/
 
 .about__content {
   margin-top: 8rem;
@@ -745,18 +724,4 @@ ul.andMore {
   .about__photo {
     margin-top: 2.5rem;
   }
-}
-
-/** Media Queries**/
-
-@media screen and (min-width: 768px) {
-  .carousel img {
-    width: 80%;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-
 }
